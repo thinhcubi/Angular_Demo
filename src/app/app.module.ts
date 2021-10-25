@@ -7,12 +7,16 @@ import { ProductListComponent } from './product/product-list/product-list.compon
 import { ProductCreateComponent } from './product/product-create/product-create.component';
 import {FormGroup, FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {RouterModule} from "@angular/router";
+import { ProductEditComponent } from './product/product-edit/product-edit.component';
+import { ProductDeleteComponent } from './product/product-delete/product-delete.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductListComponent,
     ProductCreateComponent,
+    ProductEditComponent,
+    ProductDeleteComponent,
   ],
   imports: [
     BrowserModule,

@@ -39,4 +39,13 @@ export class ProductService {
   saveProduct(product: object){
     this.products.push(product)
   }
+  findByIndex(index: number){
+    return this.products[index]
+  }
+  updateProduct(product: Product,id: number){
+    return this.products[id] = product;
+  }
+  deleteProduct(id: number){
+    this.products.splice(id,1)
+  }
 }
